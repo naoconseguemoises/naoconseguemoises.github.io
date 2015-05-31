@@ -1,7 +1,9 @@
-body {
-  width: 100%;
+p, div {
+  margin: 0 auto;
 }
-p {
-  margin-left: auto;
-  margin-right: auto;
+p.w360 {
+  width: 360px;
+}
+p.w150 {
+  width: 150px;
 }
