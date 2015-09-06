@@ -21,8 +21,31 @@
   <link rel="stylesheet" type="text/css"
       href="//yegor256.github.io/tacit/tacit.min.css"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script language="javascript">
+  frases = [
+    "Desenha o arco-íro",
+    "Desenha um negócio de jogá bola do 'guda'",
+    "Pode desenhar uma frô",
+    "Desenha no quadro né",
+    "Agora intendi o raçucíno",
+    "Eu topo tudo por dinheiro",
+    "Por gentileza moça, desenha aí um objeto que vocês sabem",
+    "Eu sou do Cambuci",
+    "Eu sou vendedor né?",
+    "Certo, mando elas desenhar um óculos",
+    "Agora tô entendendo",
+    "Desenha... É pá desenha a bola",
+    "Duas raquetes",
+    "Desenha um violão"
+    ];
+
+  function mostraFrase() {
+    document.getElementById("frase").textContent = frases[Math.floor((Math.random()*frases.length))];
+  };
+</script>  
 </head>
-<body>
+<body onload="mostraFrase();">
+
   <p>
     <a class="top_social"
       href="javascript:window.location=%22http://www.facebook.com/sharer.php?u=%22+encodeURIComponent(document.location)+%22&#38;t=%22+encodeURIComponent(document.title)"
@@ -33,6 +56,7 @@
       href="javascript:window.location=%22http://reddit.com/submit?url=%22+encodeURIComponent(document.location)+%22&title=%22+encodeURIComponent(document.title)">Submit to Reddit</a> |
     <a class="top_social" href="https://github.com/naoconseguemoises/naoconseguemoises.github.io">Star on GitHub</a>
   </p>
+  <h2 style="text-align: center" id="frase"></h2>
   <p class="w360">
     <img src="naoconsegue.gif">
   </p>
