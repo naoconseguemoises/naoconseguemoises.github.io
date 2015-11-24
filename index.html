@@ -22,31 +22,8 @@
   <link rel="stylesheet" type="text/css"
       href="//yegor256.github.io/tacit/tacit.min.css"/>
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<script language="javascript">
-  frases = [
-    "Desenha o arco-íro",
-    "Desenha um negócio de jogá bola do 'guda'",
-    "Pode desenhar uma frô",
-    "Desenha no quadro né",
-    "Agora intendi o raçucíno",
-    "Eu topo tudo por dinheiro",
-    "Por gentileza moça, desenha aí um objeto que vocês sabem",
-    "Eu sou do Cambuci",
-    "Eu sou vendedor né?",
-    "Certo, mando elas desenhar um óculos",
-    "Agora tô entendendo",
-    "Desenha... É pá desenha a bola",
-    "Duas raquetes",
-    "Desenha um violão",
-    "Agora acho que entrei no raciocínio"
-  ];
-
-  function mostraFrase() {
-    document.getElementById("frase").textContent = frases[Math.floor((Math.random()*frases.length))];
-  };
-</script>
 </head>
-<body onload="mostraFrase();">
+<body>
 
   <p>
     <a class="top_social"
@@ -59,7 +36,7 @@
     <a class="top_social" href="https://github.com/naoconseguemoises/naoconseguemoises.github.io">Star on GitHub</a>
   </p>
   <h2 style="text-align: center" id="frase"></h2>
-  <p style="text-align: center"><a href="#" onclick="mostraFrase();">Trocar frase</a></p>
+  <p style="text-align: center" id="mostraFrase"><a href="#">Trocar frase</a></p>
   <p class="w360">
     <img src="assets/img/naoconsegue.gif">
   </p>
@@ -86,6 +63,7 @@
       </a>!
     </small>
   </h4>
+  <script src="/assets/js/main.js" async></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
