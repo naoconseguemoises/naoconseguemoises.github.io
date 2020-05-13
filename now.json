@@ -1,0 +1,10 @@
+{
+	"version": 2,
+	"alias": [
+		"naoconseguemoises.now.sh"
+	],
+	"builds": [{
+		"src": "*",
+		"use": "@now/static"
+	}]
+}

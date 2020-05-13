@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@caarlos0">
-  <meta name="twitter:title" content="Moisés... não consegue né?">
-  <meta property="og:title" content="Moisés... não consegue né?">
-  <meta name="twitter:description"
-    content="Especialmente pra todo mundo que simplesmente não consegue...">
-  <meta name="description"
-    content="Especialmente pra todo mundo que simplesmente não consegue...">
-  <meta name="twitter:url" content="http://naoconseguemoises.com.br">
-  <meta property="og:url" content="http://naoconseguemoises.com.br">
-  <meta property="og:image" content="http://naoconseguemoises.com.br/naoconsegue.gif">
-  <meta name="theme-color" content="#f5f5f5">
-  <title>Não consegue né Moises?</title>
-  <link href="index.css" media="all" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css"
-      href="//yegor256.github.io/tacit/tacit.min.css"/>
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<script language="javascript">
-  frases = [
-    "Desenha o arco-íro",
-    "Desenha um negócio de jogá bola do 'guda'",
-    "Pode desenhar uma frô",
-    "Desenha no quadro né",
-    "Agora intendi o raçucíno",
-    "Eu topo tudo por dinheiro",
-    "Por gentileza moça, desenha aí um objeto que vocês sabem",
-    "Eu sou do Cambuci",
-    "Eu sou vendedor né?",
-    "Certo, mando elas desenhar um óculos",
-    "Agora tô entendendo",
-    "Desenha... É pá desenha a bola",
-    "Duas raquetes",
-    "Desenha um violão",
-    "Agora acho que entrei no raciocínio"
-  ];
 
-  function mostraFrase() {
-    document.getElementById("frase").textContent = frases[Math.floor((Math.random()*frases.length))];
-  };
-</script>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="@caarlos0">
+	<meta name="twitter:title" content="Moisés... não consegue né?">
+	<meta property="og:title" content="Moisés... não consegue né?">
+	<meta name="twitter:description"
+		content="Especialmente pra todo mundo que simplesmente não consegue...">
+	<meta name="description"
+		content="Especialmente pra todo mundo que simplesmente não consegue...">
+	<meta name="twitter:url" content="https://naoconseguemoises.now.sh">
+	<meta property="og:url" content="https://naoconseguemoises.now.sh">
+	<meta property="og:image"
+		content="https://naoconseguemoises.now.sh/naoconsegue.gif">
+	<meta name="theme-color" content="#f5f5f5">
+	<title>Não consegue né Moises?</title>
+	<link href="index.css" media="all" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css"
+		href="//yegor256.github.io/tacit/tacit.min.css" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<script language="javascript">
+		frases = [
+			"Desenha o arco-íro",
+			"Desenha um negócio de jogá bola do 'guda'",
+			"Pode desenhar uma frô",
+			"Desenha no quadro né",
+			"Agora intendi o raçucíno",
+			"Eu topo tudo por dinheiro",
+			"Por gentileza moça, desenha aí um objeto que vocês sabem",
+			"Eu sou do Cambuci",
+			"Eu sou vendedor né?",
+			"Certo, mando elas desenhar um óculos",
+			"Agora tô entendendo",
+			"Desenha... É pá desenha a bola",
+			"Duas raquetes",
+			"Desenha um violão",
+			"Agora acho que entrei no raciocínio"
+		];
+
+		function mostraFrase() {
+			document.getElementById("frase").textContent = frases[Math.floor((Math
+				.random() * frases.length))];
+		};
+
+	</script>
 </head>
+
 <body onload="mostraFrase();">
 
-  <p>
-    <a class="top_social"
-      href="javascript:window.location=%22http://www.facebook.com/sharer.php?u=%22+encodeURIComponent(document.location)+%22&#38;t=%22+encodeURIComponent(document.title)"
-      title="Share on Facebook...">Like</a> |
-    <a class="top_social"
-      href="javascript:window.location=%22https://twitter.com/share?url=%22+encodeURIComponent(document.location)+%22&text=%22+encodeURIComponent(document.title)">Tweet</a> |
-    <a class="top_social"
-      href="javascript:window.location=%22http://reddit.com/submit?url=%22+encodeURIComponent(document.location)+%22&title=%22+encodeURIComponent(document.title)">Submit to Reddit</a> |
-    <a class="top_social" href="https://github.com/naoconseguemoises/naoconseguemoises.github.io">Star on GitHub</a>
-  </p>
-  <h2 style="text-align: center" id="frase"></h2>
-  <p style="text-align: center"><a href="#" onclick="mostraFrase();">Desenha uma frase</a></p>
-  <p class="w360">
-    <img src="naoconsegue.gif">
-  </p>
-  <div class="w360" style="text-align: center">
-    <h5>Slack Emoji</h5>
-    <p>Pra mandar pros coleguinhas!</p>
-    <p>
-      <img src="emoji/moises1.jpeg" alt="moises1">
-      <img src="emoji/moises2.jpeg" alt="moises2">
-      <img src="emoji/moises3.jpeg" alt="moises3">
-    </p>
-  </div>
-  <div class="w360" style="text-align: center">
-    <h4>
-      Não entendeu?
-      <small>
-        <a href="https://www.youtube.com/watch?v=_ll40i0VYho">
-          Clique aqui
-        </a>!
-      </small>
-    </h4>
-  </div>
-  <p class="w150">
-    <object type="application/x-shockwave-flash"
-      data="http://instantbutton.me/swf/red.swf"
-      width="150" height="150"
-      id="button-nao_consegue_moises_20150529103520"
-      title="Adobe Flash Player" style="visibility: visible;">
-      <param name="allowScriptAccess" value="always">
-      <param name="allowFullScreen" value="false">
-      <param name="quality" value="high">
-      <param name="menu" value="false">
-      <param name="bgcolor" value="#ffffff">
-      <param name="wmode" value="transparent">
-      <param name="flashvars" value="mp3Url=http://instantbutton.me/uploads/201505/nao_consegue_moises_20150529103520.mp3">
-    </object>
-  </p>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-63593076-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+	<p>
+		<a class="top_social"
+			href="javascript:window.location=%22http://www.facebook.com/sharer.php?u=%22+encodeURIComponent(document.location)+%22&#38;t=%22+encodeURIComponent(document.title)"
+			title="Share on Facebook...">Like</a> |
+		<a class="top_social"
+			href="javascript:window.location=%22https://twitter.com/share?url=%22+encodeURIComponent(document.location)+%22&text=%22+encodeURIComponent(document.title)">Tweet</a>
+		|
+		<a class="top_social"
+			href="javascript:window.location=%22http://reddit.com/submit?url=%22+encodeURIComponent(document.location)+%22&title=%22+encodeURIComponent(document.title)">Submit
+			to Reddit</a> |
+		<a class="top_social"
+			href="https://github.com/naoconseguemoises/naoconseguemoises.github.io">Star
+			on GitHub</a>
+	</p>
+	<h2 style="text-align: center" id="frase"></h2>
+	<p style="text-align: center"><a href="#" onclick="mostraFrase();">Desenha
+			uma frase</a></p>
+	<p class="w360">
+		<img src="naoconsegue.gif">
+	</p>
+	<div class="w360" style="text-align: center">
+		<h5>Slack Emoji</h5>
+		<p>Pra mandar pros coleguinhas!</p>
+		<p>
+			<img src="emoji/moises1.jpeg" alt="moises1">
+			<img src="emoji/moises2.jpeg" alt="moises2">
+			<img src="emoji/moises3.jpeg" alt="moises3">
+		</p>
+	</div>
+	<div class="w360" style="text-align: center">
+		<h4>
+			Não entendeu?
+			<small>
+				<a href="https://www.youtube.com/watch?v=_ll40i0VYho">
+					Clique aqui
+				</a>!
+			</small>
+		</h4>
+	</div>
+	<p class="w150">
+		<object type="application/x-shockwave-flash"
+			data="http://instantbutton.me/swf/red.swf" width="150" height="150"
+			id="button-nao_consegue_moises_20150529103520"
+			title="Adobe Flash Player" style="visibility: visible;">
+			<param name="allowScriptAccess" value="always">
+			<param name="allowFullScreen" value="false">
+			<param name="quality" value="high">
+			<param name="menu" value="false">
+			<param name="bgcolor" value="#ffffff">
+			<param name="wmode" value="transparent">
+			<param name="flashvars"
+				value="mp3Url=http://instantbutton.me/uploads/201505/nao_consegue_moises_20150529103520.mp3">
+		</object>
+	</p>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js',
+			'ga');
+		ga('create', 'UA-63593076-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
 </body>
+
 </html>
