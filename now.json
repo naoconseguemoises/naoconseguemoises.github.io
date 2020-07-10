@@ -4,7 +4,7 @@
 		"naoconseguemoises.now.sh"
 	],
 	"builds": [{
-		"src": "*",
+		"src": "**/*",
 		"use": "@now/static"
 	}]
 }
